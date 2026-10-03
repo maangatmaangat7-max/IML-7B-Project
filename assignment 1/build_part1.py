@@ -30,8 +30,9 @@ def code(value):
 
 md("""# Part 1 — Data preparation and leakage-free pipeline
 
-**Project:** Predict Students' Dropout and Academic Success (UCI Machine Learning Repository).  
-**Question:** Given information available through the end of semester 2, predict the eventual outcome: `Dropout`, `Enrolled`, or `Graduate`.  
+**Project:** Predict Students' Dropout and Academic Success (UCI Machine Learning Repository).
+
+**Question:** Given information available through the end of semester 2, predict the eventual outcome: `Dropout`, `Enrolled`, or `Graduate`.
 **Primary metric:** macro F1, so the smaller `Enrolled` class counts equally. Also report per-class recall in later parts. No model is trained in Part 1.
 
 The outcome is defined at the normal course duration, after the two semester measurements. This is an **end-of-year-1** prediction task, not an enrollment-time prediction. The semester columns must be removed if an enrollment-time task is attempted. Dataset approval and group registration are administrative requirements for the team to confirm with the instructor.
@@ -162,7 +163,7 @@ numeric_pipeline = Pipeline([
     ('scale', RobustScaler()),
 ])
 categorical_pipeline = Pipeline([
-    ('impute', SimpleImputer(strategy='most_frequent')), 
+    ('impute', SimpleImputer(strategy='most_frequent')),
     ('encode', OneHotEncoder(handle_unknown='ignore', sparse_output=False)),
 ])
 binary_pipeline = Pipeline([
