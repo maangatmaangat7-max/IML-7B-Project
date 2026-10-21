@@ -43,7 +43,13 @@ The second-semester variables make this an end-of-year-one prediction task, not 
 │   ├── build_part2.py                   # Rebuilds and executes the Part 2 notebook
 │   ├── discussion.md                    # Comparison write-up embedded in the notebook
 │   └── requirements.txt                 # Python dependencies
-├── assignment 3/                         # Reserved for Part 3
+├── assignment 3/
+│   ├── Part 3 - Ensembles and Hyperparameter Optimisation.ipynb  # Executed ensembles / regularization notebook
+│   ├── Part 3 - Progress Report.pdf     # Mid-semester progress report
+│   ├── build_part3.py                   # Rebuilds and executes the Part 3 notebook
+│   ├── build_part3_report.py            # Rebuilds the progress report PDF
+│   ├── discussion.md                    # Comparison write-up embedded in the notebook
+│   └── requirements.txt                 # Python dependencies
 ├── assignment 4/                         # Reserved for Part 4
 ├── Final Project/                        # Reserved for the final submission
 └── data.csv                              # Local dataset input
@@ -84,6 +90,10 @@ Run the notebook from top to bottom. It locates `data.csv` whether the notebook 
 
 Part 2 compares Gaussian and Bernoulli Naive Bayes against an unpruned and a tuned decision tree, with preprocessing inside each pipeline. It includes a hand-worked information-gain/Gini split, repeated stratified cross-validation (nested for the tuned tree), and a single held-out test evaluation. The tuned tree and Bernoulli Naive Bayes are statistically tied at about 0.67 macro F1. See [assignment 2/README.md](assignment%202/README.md).
 
+## Part 3: ensembles, regularization and tuning
+
+Part 3 compares Random Forest, AdaBoost and XGBoost with Ridge / Lasso / Elastic-Net regularized logistic regression. Models are tuned by randomized or grid search and evaluated with nested cross-validation, followed by a single held-out test evaluation with bootstrap intervals. The best tuned models reach about 0.72 nested-CV macro F1, against 0.68 for the Part 2 baselines, and are statistically close to one another. The folder also holds the mid-semester progress report. See [assignment 3/README.md](assignment%203/README.md).
+
 ## Planned work
 
-Parts 3 and 4 will continue from these baselines with ensembles, regularization, hyperparameter tuning, a neural network and unsupervised analysis.
+Part 4 will add a neural network, an unsupervised analysis and an interpretability and fairness discussion; Part 5 integrates everything into the final notebook, report and viva.
