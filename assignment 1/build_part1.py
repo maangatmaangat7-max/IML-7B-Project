@@ -200,7 +200,10 @@ doc = SimpleDocTemplate(str(OUT / 'Part 1 - Project Proposal.pdf'), pagesize=A4,
                         leftMargin=2*cm, rightMargin=2*cm, topMargin=1.7*cm, bottomMargin=1.6*cm)
 story = [Paragraph('Part 1 | Project Proposal', styles['TitleCustom']),
          Paragraph('Predicting student dropout and academic success', styles['HeadingCustom']),
-         Paragraph('CS-13410 Introduction to Machine Learning · Fall 2026 · Assignment 1', styles['BodyCustom'])]
+         Paragraph('CS-13410 Introduction to Machine Learning · Fall 2026 · Assignment 1', styles['BodyCustom']),
+         Paragraph('<b>Instructor:</b> Salman Ali', styles['BodyCustom']),
+         Paragraph('<b>Group members:</b> Muzamil Abbas (70148677); Abdul Muneeb Maangat (70148787)', styles['BodyCustom']),
+         Paragraph('<b>Repository:</b> <link href="https://github.com/maangatmaangat7-max/IML-7B-Project" color="blue">github.com/maangatmaangat7-max/IML-7B-Project</link>', styles['BodyCustom'])]
 sections = [
     ('Problem and target', 'Predict a university student\'s eventual <b>Dropout, Enrolled, or Graduate</b> outcome using data known by the end of the second semester. This is a three-class classification problem. The target is the CSV column <b>Target</b>. The semester outcomes are available at the proposed prediction time; this is not an enrollment-time forecast.'),
     ('Dataset and suitability', 'The supplied data.csv matches the UCI “Predict Students\' Dropout and Academic Success” dataset: 4,424 students, 36 predictors, and one target. It combines academic counts/grades, demographics, application categories, and economic indicators. Its size and mixed numeric/categorical features support the required preprocessing and later model comparisons. Classes: Graduate 2,209; Dropout 1,421; Enrolled 794. There are no missing cells or exact duplicate rows in this supplied copy. UCI lists the dataset under CC BY 4.0.'),
