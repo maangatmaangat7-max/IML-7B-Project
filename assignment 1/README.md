@@ -16,5 +16,5 @@ put the preprocessing sequence inside each model pipeline during cross-validatio
 
 Dataset: [UCI Predict Students' Dropout and Academic Success](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success),
 DOI [10.24432/C5MC89](https://doi.org/10.24432/C5MC89), CC BY 4.0.
-The project brief also requires instructor approval of the dataset and group
-registration; these must be completed by the students.
+The team reports that the instructor has approved this dataset. Group
+registration is a separate course requirement.
