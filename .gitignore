@@ -1,0 +1,8 @@
+# Locally generated document-rendering files
+tmp/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
