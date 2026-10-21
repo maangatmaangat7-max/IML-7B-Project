@@ -38,7 +38,11 @@ The second-semester variables make this an end-of-year-one prediction task, not 
 │   ├── Part 1 - Project Proposal.pdf    # Part 1 proposal
 │   ├── build_part1.py                   # Rebuilds the Part 1 artifacts
 │   └── requirements.txt                 # Python dependencies
-├── assignment 2/                         # Reserved for Part 2
+├── assignment 2/
+│   ├── Part 2 - Supervised Learning Baseline.ipynb  # Executed Naive Bayes vs. decision tree notebook
+│   ├── build_part2.py                   # Rebuilds and executes the Part 2 notebook
+│   ├── discussion.md                    # Comparison write-up embedded in the notebook
+│   └── requirements.txt                 # Python dependencies
 ├── assignment 3/                         # Reserved for Part 3
 ├── assignment 4/                         # Reserved for Part 4
 ├── Final Project/                        # Reserved for the final submission
@@ -76,6 +80,10 @@ The second-semester variables make this an end-of-year-one prediction task, not 
 
 Run the notebook from top to bottom. It locates `data.csv` whether the notebook is opened from the repository root or from the `assignment 1` folder.
 
+## Part 2: supervised learning baseline
+
+Part 2 compares Gaussian and Bernoulli Naive Bayes against an unpruned and a tuned decision tree, with preprocessing inside each pipeline. It includes a hand-worked information-gain/Gini split, repeated stratified cross-validation (nested for the tuned tree), and a single held-out test evaluation. The tuned tree and Bernoulli Naive Bayes are statistically tied at about 0.67 macro F1. See [assignment 2/README.md](assignment%202/README.md).
+
 ## Planned work
 
-Parts 2 through 4 will build on the same preprocessing design by training and comparing classification models, using stratified cross-validation and final held-out test-set evaluation.
+Parts 3 and 4 will continue from these baselines with ensembles, regularization, hyperparameter tuning, a neural network and unsupervised analysis.
